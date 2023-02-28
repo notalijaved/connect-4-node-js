@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Connect 4</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="ce-ce">
+  <div class="start-screen ce-ce fl-col">
+    <div class="logo">
+      <p class="head-main">Welcome to Connect 4 Game</p>
+    </div>
+    <div class="instructions">
+      <span>How to Play:</span>
+      Connect Four is a game where two players take turns dropping colored discs into a vertical grid. The goal is to connect four of your discs in a row, either horizontally, vertically, or diagonally. The first player to connect four discs wins the game.
+    </div>
+    <input type="text" id="player_name" placeholder="Enter Player Name"/>
+    <div class="play-btns sp-bn">
+      <button id="create-game" class="big-btn btn">Create Game</button>
+      <button id="show-rooms" class="big-btn btn">Join Game</button>
+    </div>
+  </div>
+  <script src="js/socket.io.js"></script>
+  <!-- CUSTOM SCRIPTS -->
+  <script src="js/pages/nextPlayer.js"></script>
+  <script src="js/pages/startScreen.js"></script>
+  <script src="js/pages/joinGame.js"></script>
+  <script src="js/pages/createGame.js"></script>
+  <script src="js/pages/gameOver.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
